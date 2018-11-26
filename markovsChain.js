@@ -1,4 +1,9 @@
- // Here's the function for generating an array of words from a string (minus punctuation and numbers).
+/* This project uses Markov's Chain to build a new song/poem using words from any other song/poem (in the form of an array).
+It works by building a database of "first" words, and the words that follow the "first" word in the source material. It then
+uses the database to "guess" what words to use next in the new song.
+*/
+
+// Here's the function for generating an array of words from a string (minus punctuation and numbers).
 
  function generateWordArray(wordString){
     let string = wordString.toLowerCase();
@@ -27,7 +32,8 @@
   }
   
   
-  // Here's the function for taking the previously created finalWordArray, and generating an object containing unique words, and words that come after that word.
+// Here's the function for taking the previously created finalWordArray, and generating an object containing unique words,
+// and words that come after that word.
   
   function generateWordPairs(array){
     let wordPairs = {};
